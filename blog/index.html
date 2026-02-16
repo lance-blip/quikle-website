@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quikle AI Blog | Insights on AI Automation & Sales</title>
+    <meta name="description" content="Expert insights on Voice AI, Chatbots, and Workflow Automation for South African SMEs. Learn how to scale your business with AI.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Blog Specific Styles */
+        .blog-hero {
+            background: var(--primary);
+            color: white;
+            padding: 160px 0 80px;
+            text-align: center;
+        }
+        .blog-hero h1 { color: white; margin-bottom: 1rem; }
+        .blog-hero p { color: rgba(255,255,255,0.8); font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            transition: transform 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-soft);
+        }
+        .blog-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            background: var(--bg-secondary);
+        }
+        .blog-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .blog-tag {
+            background: var(--accent-light);
+            color: var(--accent);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .blog-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            line-height: 1.4;
+        }
+        .blog-excerpt {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        .read-more {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        /* Sidebar (if needed for layout, simplified here to just grid) */
+        
+        /* Newsletter */
+        .newsletter-section {
+            background: var(--accent-light);
+            padding: 4rem 0;
+            margin-top: 4rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 2rem auto 0;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-grid { grid-template-columns: 1fr; }
+            .newsletter-form { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../quikle-logo.png" alt="Quikle AI Logo" onerror="this.src='https://via.placeholder.com/40x40?text=Q'">
+                Quikle AI
+            </a>
+            <div class="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="../index.html#voice-ai">Voice AI</a>
+                <a href="../index.html#support-bots">Support Bots</a>
+                <a href="../index.html#workflow">Automation</a>
+                <a href="../index.html#assistants">Assistants</a>
+                <a href="index.html" class="active">Blog</a>
+                <a href="../index.html#contact">Contact</a>
+                <a href="https://lance-tng3dr7z.scoreapp.com" class="btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">Get Free AI Score</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1>Quikle AI Insights</h1>
+            <p>Strategies, guides, and news on AI automation for South African businesses.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-padding" style="background: var(--bg-body);">
+        <div class="container">
+            
+            <!-- Filters (Optional) -->
+            <div style="display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 1rem; margin-bottom: 2rem;">
+                <button class="btn-primary" style="padding: 8px 16px; font-size: 0.9rem;">All</button>
+                <button class="btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">Voice AI</button>
+                <button class="btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">Automation</button>
+                <button class="btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">Case Studies</button>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Post 1 -->
+                <article class="blog-card">
+                    <img src="https://via.placeholder.com/400x250?text=Voice+AI" alt="Voice AI" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Feb 16, 2026</span>
+                            <span class="blog-tag">Voice AI</span>
+                        </div>
+                        <h3 class="blog-title"><a href="post-template.html">Why 72% of Leads Go Cold in 5 Minutes (And How to Fix It)</a></h3>
+                        <p class="blog-excerpt">Speed to lead is the single biggest factor in closing sales. Discover how AI voice agents can respond instantly, 24/7.</p>
+                        <a href="post-template.html" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="blog-card">
+                    <img src="https://via.placeholder.com/400x250?text=Automation" alt="Automation" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Feb 10, 2026</span>
+                            <span class="blog-tag">Automation</span>
+                        </div>
+                        <h3 class="blog-title"><a href="#">The 25-Hour Work Week: Automating the "Admin Slop"</a></h3>
+                        <p class="blog-excerpt">Manual data entry, invoice chasing, and scheduling are killing your productivity. Here is the blueprint to automate 80% of your ops.</p>
+                        <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="blog-card">
+                    <img src="https://via.placeholder.com/400x250?text=Chatbots" alt="Chatbots" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Feb 05, 2026</span>
+                            <span class="blog-tag">Support</span>
+                        </div>
+                        <h3 class="blog-title"><a href="#">Agentic Chatbots vs. Standard Bots: What's the Difference?</a></h3>
+                        <p class="blog-excerpt">Most chatbots are glorified FAQs. Agentic bots are employees. Learn why context-awareness changes everything for customer support.</p>
+                        <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                 <!-- Post 4 -->
+                 <article class="blog-card">
+                    <img src="https://via.placeholder.com/400x250?text=Strategy" alt="Strategy" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Jan 28, 2026</span>
+                            <span class="blog-tag">Strategy</span>
+                        </div>
+                        <h3 class="blog-title"><a href="#">The AI Readiness Scorecard: Are You Ready to Scale?</a></h3>
+                        <p class="blog-excerpt">Before you invest in technology, you need a strategy. Take our assessment to see where your business stands on the AI maturity curve.</p>
+                        <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="newsletter-section">
+                <h2>Get AI Insights Weekly</h2>
+                <p>Join 2,000+ SA founders scaling with automation.</p>
+                <form class="newsletter-form" action="https://webhooks.quikle.co.za/webhook/newsletter" method="POST">
+                    <input type="email" placeholder="Your email address" class="form-control" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo" style="color: white;">
+                        <img src="../quikle-logo.png" alt="Quikle AI" style="filter: brightness(0) invert(1);" onerror="this.src='https://via.placeholder.com/40x40?text=Q'">
+                        Quikle AI
+                    </a>
+                    <p>AI Automation Agency for South African SMEs.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#voice-ai">Voice AI</a></li>
+                        <li><a href="../index.html#support-bots">Support Bots</a></li>
+                        <li><a href="../index.html#workflow">Automation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#how-it-works">How It Works</a></li>
+                        <li><a href="../index.html#results">Results</a></li>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Quikle AI. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
